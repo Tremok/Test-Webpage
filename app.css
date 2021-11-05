@@ -1,0 +1,57 @@
+#download-app {
+  background-color: var(--color-yellow);
+  /* min-height: 840px; */
+  position: relative;
+  margin-top: 150px;
+}
+
+#download-app > div {
+  /* overflow: hidden; */
+  position: relative;
+}
+
+#download-app div::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#download-app > div > div {
+  width: 50%;
+  float: left;
+}
+
+#download-app div.description {
+  padding: 4em 0;
+}
+#download-app h4,
+#download-app h2 {
+  margin: 0px;
+  text-transform: uppercase;
+  font-family: var(--font-oswald);
+  color: var(--color-brown);
+}
+#download-app h4 {
+  font-size: 1.8em;
+  font-weight: normal;
+}
+
+#download-app h2 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+#download-app a.button img {
+  height: 40px;
+}
+
+#download-app div.image {
+  position: relative;
+}
+#download-app img[alt='e-shop'] {
+  width: 50%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 2;
+}

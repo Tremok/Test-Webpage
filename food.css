@@ -1,0 +1,113 @@
+#food {
+  margin-top: 100px;
+}
+
+/* FOOD MENU */
+#menu_nav div {
+  display: block;
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+#menu_nav a {
+  text-decoration: none;
+  color: var(--color-black);
+  font-family: var(--font-oswald);
+  font-size: x-large;
+}
+
+#menu_nav a span {
+  display: block;
+}
+
+#menu_nav a img {
+  width: 40px;
+  vertical-align: middle;
+}
+
+#menu_nav a.active {
+  pointer-events: none;
+}
+
+#menu_nav a:hover img,
+#menu_nav a.active img {
+  filter: invert(15%) sepia(67%) saturate(7069%) hue-rotate(349deg)
+    brightness(84%) contrast(116%);
+}
+
+#menu_nav::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* FOOD CONTENT */
+#menu_content {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#menu_content > div.item {
+  display: block;
+  float: left;
+  width: 25%;
+
+  box-sizing: border-box;
+  padding: 10px;
+
+  text-align: center;
+}
+
+#menu_content div.card > * {
+  margin: auto;
+  display: block;
+}
+
+#menu_content div.card img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#menu_content div.like > div {
+  text-align: right;
+  color: var(--color-gray);
+}
+
+#menu_content .like:hover .far.fa-heart:before {
+  content: '\f004';
+  font-weight: 900;
+  color: var(--color-red);
+  opacity: 0.6;
+}
+
+#menu_content a.buy_button {
+  padding: 4px;
+  border-radius: 5px;
+  background-color: var(--color-brown);
+
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+  font-family: var(--font-oswald);
+  color: var(--color-yellow);
+}
+
+#menu_content div.description h1 {
+  color: var(--color-black);
+  font-family: var(--font-oswald);
+  font-size: x-large;
+}
+
+#menu_content div.description p {
+  color: var(--color-gray);
+  font-family: var(--font-roboto);
+  font-size: small;
+}
+
+#menu_content::after {
+  content: '';
+  display: block;
+  clear: both;
+}

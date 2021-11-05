@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style></style>
+    <link rel="stylesheet" href="definitions.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="food.css" />
+    <link rel="stylesheet" href="offer.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="footer.css" />
+
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('.nav-menu');
+
+      hamburger.addEventListener('click', mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      }
+
+      const navLink = document.querySelectorAll('.nav-link');
+
+      navLink.forEach((n) => n.addEventListener('click', closeMenu));
+
+      function closeMenu() {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Mobile Menu -->
+    <!-- <nav class="navbar">
+      <a href="#" class="nav-logo">WebDev.</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav> -->
+
+    <div id="hero">
+      <div style="text-align: center">
+        <h1>
+          Big burger,<br />
+          little money
+        </h1>
+        <div class="price-mark">
+          <span
+            style="
+              font-size: 1.5em;
+              text-transform: uppercase;
+              display: block;
+              margin-top: 30px;
+            "
+            >Form</span
+          >
+          <span style="font-size: 2.5em; line-height: 1; display: block">
+            $6.99
+          </span>
+        </div>
+        <img id="hero-img" src="assets/hero-2-img.png" alt="burger" />
+      </div>
+
+      <img class="overlay-wave" src="assets/white-overlay-wave.png" alt="" />
+    </div>
+
+    <!-- FOOD SECTION -->
+    <div id="food">
+      <!-- MENU -->
+      <div id="menu_nav">
+        <div>
+          <a class="active" href="#">
+            <img src="assets/icons/burger.png" alt="Burger icon" />
+            <span>Burgers</span>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="assets/icons/sides.png" alt="Sides icon" />
+            <span>Sides</span>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="assets/icons/salad.png" alt="Salad icon" />
+            <span>Salads</span>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="assets/icons/donut.png" alt="Donut icon" />
+            <span>Donuts</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div id="menu_content">
+        <div class="item">
+          <div class="card">
+            <div class="like">
+              <div><i class="far fa-heart"></i></div>
+            </div>
+            <img src="assets/single/burger-01.png" alt="Crispy chicken" />
+            <a class="buy_button" href="#">$8.95</a>
+          </div>
+          <div class="description">
+            <h1>Crispy Chicken</h1>
+            <p>
+              Fried chicken breast, chill sauce, tomatoes, pickles, coleslaw
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="like">
+              <div><i class="far fa-heart"></i></div>
+            </div>
+            <img src="assets/single/burger-02.png" alt="Ultimate Bacon" />
+            <a class="buy_button" href="#">$9.99</a>
+          </div>
+          <div class="description">
+            <h1>Ultimate Bacon</h1>
+            <p>House beef patty, cheddar cheese, bacon, onion, mustard</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="like">
+              <div><i class="far fa-heart"></i></div>
+            </div>
+            <img src="assets/single/burger-06.png" alt="Smokey house" />
+            <a class="buy_button" href="#">$7.99</a>
+          </div>
+          <div class="description">
+            <h1>Smokey House</h1>
+            <p>
+              Beef patty, cheddar cheese, bacon, onion, lettuce, tomatoes,
+              pickles
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="like">
+              <div><i class="far fa-heart"></i></div>
+            </div>
+            <img src="assets/single/burger-05.png" alt="Turkey burger" />
+            <a class="buy_button" href="#">$8.30</a>
+          </div>
+          <div class="description">
+            <h1>Turkey Burger</h1>
+            <p>Turkey, cheddar cheese, onion, lettuce, tomatoes, pickles</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OFFER SECTION-->
+    <div id="offer">
+      <img src="assets/offer-1.jpeg" alt="Special double burger meat" />
+      <img src="assets/offer-2.jpeg" alt="Special food menu" />
+      <img src="assets/offer-3.jpeg" alt="Happy breakfast time" />
+      <img src="assets/offer-4.jpeg" alt="Special vegan menu" />
+    </div>
+
+    <div id="download-app">
+      <div>
+        <div class="description">
+          <h4>Download mobile app and</h4>
+          <h2>save up to 20%</h2>
+          <p>
+            Purus laoreet hendrerit litora posuere nisi rhoncus tempus
+            sollicitudin luctus ante integer morbi ac
+          </p>
+          <a class="button" href="#"
+            ><img src="assets/appstore.png" alt="Apple Store"
+          /></a>
+          <a class="button" href="#"
+            ><img src="assets/googleplay.png" alt="Google Play"
+          /></a>
+        </div>
+        <img src="assets/e-shop.png" alt="e-shop" />
+        <!-- <div class="image">
+          <img src="assets/e-shop.png" alt="e-shop" />
+        </div> -->
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="call-action">
+        <div>
+          <h2>We Guarantee</h2>
+          <h1>30 minutes delivery!</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor <br />
+            incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a class="button" href="#">Call: 789-654-3210</a>
+        </div>
+      </div>
+      <div class="map-site">
+        <div>
+          <h3>Location</h3>
+          <p>8721 M Central avenue, Los Angeles, CA 90036, United States</p>
+        </div>
+        <div>
+          <h3>Working Hours</h3>
+          <p>
+            Mon-Fri: 9:00AM - 10:00PM <br />
+            Saturday: 10:00AM - 8:30PM<br />
+            Sunday: 12:00PM - 5:00PM
+          </p>
+        </div>
+        <div>
+          <h3>Order Now</h3>
+          <p>Purus laoreet hendrerit litora posuere nisi rhoncus</p>
+          <h3 class="yellow">987-654-3210</h3>
+        </div>
+        <div>
+          <h3>Follow Us</h3>
+          <p>Purus laoreet hendrerit litora posuere nisi rhoncus</p>
+          <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="information">
+        <ul>
+          <li><a href="#home">All rights reserved</a></li>
+          <li><a href="#news">About us</a></li>
+          <li><a href="#contact">Gift card</a></li>
+          <li><a href="#about">Terms of use</a></li>
+          <li><a href="#about">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

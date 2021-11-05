@@ -1,0 +1,57 @@
+#hero {
+  background: url(assets/hero-2.jpeg);
+  /* min-height: 840px; */
+  position: relative;
+  padding-top: 150px;
+}
+
+#hero > div {
+  overflow: hidden;
+  position: relative;
+  min-height: 840px;
+}
+
+#hero h1 {
+  color: var(--color-red);
+  font-family: var(--font-lilita-one);
+  font-size: 6em;
+  text-transform: uppercase;
+}
+
+@supports (-webkit-text-stroke: 1px rgb(255, 255, 255)) {
+  #hero h1 {
+    -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+    -webkit-text-fill-color: ver(--color-red);
+  }
+}
+#hero div.price-mark {
+  background: url(assets/price-badge-yellow.png);
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+
+  position: absolute;
+  right: 40px;
+  bottom: 280px;
+  z-index: 3;
+
+  color: var(--color-black);
+  font-family: var(--font-oswald);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#hero #hero-img {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2;
+}
+
+#hero img.overlay-wave {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}

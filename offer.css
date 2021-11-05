@@ -1,0 +1,19 @@
+#offer {
+  width: 960px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+#offer img {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 1em;
+}
+
+#offer::after {
+  content: '';
+  display: block;
+  clear: both;
+}
