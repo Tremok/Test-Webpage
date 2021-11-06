@@ -4,18 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Burgers</title>
+
+    <!-- FONT AWSOME -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <style></style>
+
+    <!-- SWIPER.JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <link
+    rel="stylesheet"
+    href="swiper-testimonial.css"
+  />
+
+    <!-- CANVAS MENU -->
+    <link rel="stylesheet" href="off-canvas-menu.min.css" />
+
     <link rel="stylesheet" href="definitions.css" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="hero.css" />
     <link rel="stylesheet" href="food.css" />
     <link rel="stylesheet" href="offer.css" />
+    <link rel="stylesheet" href="products.css" />
     <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="testimonial.css" />
+    <link rel="stylesheet" href="gallery.css" />
     <link rel="stylesheet" href="footer.css" />
 
     <script>
@@ -64,26 +86,42 @@
       </div>
     </nav> -->
 
+
+    <!-- <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
+
+    <div id="navbar">
+
+    </div>
+
+
+
+
+        <aside class="icon-open-row">
+          <div class="icon-open-container">
+            <div class="icon-open-col-1">☰</div>
+          </div>
+        </aside>
+    <!-- HERO -->
     <div id="hero">
-      <div style="text-align: center">
+      <div>
         <h1>
           Big burger,<br />
           little money
         </h1>
+
         <div class="price-mark">
-          <span
-            style="
-              font-size: 1.5em;
-              text-transform: uppercase;
-              display: block;
-              margin-top: 30px;
-            "
-            >Form</span
-          >
-          <span style="font-size: 2.5em; line-height: 1; display: block">
-            $6.99
-          </span>
+          <span class="text">Form</span>
+          <span class="price"> $6.99 </span>
         </div>
+
         <img id="hero-img" src="assets/hero-2-img.png" alt="burger" />
       </div>
 
@@ -190,6 +228,36 @@
       <img src="assets/offer-4.jpeg" alt="Special vegan menu" />
     </div>
 
+    <!-- OTHERS PRODUCTS -->
+    <div id="other-products">
+      <div>
+        <div class="item product">
+          <div><img src="assets/img-24.jpeg" alt="Tuna Salad" /></div>
+          <div>
+            <h1>Tuna Salad</h1>
+            <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+            <h2>$9.50</h2>
+          </div>
+        </div>
+        <div class="item product">
+          <div><img src="assets/img-21.jpeg" alt="Chrispy Chicken" /></div>
+          <div>
+            <h1>Chrispy Chicken</h1>
+            <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+            <h2>$7.99</h2>
+          </div>
+        </div>
+        <div class="item product">
+          <div><img src="assets/img-25.jpeg" alt="Egg Sandwitch" /></div>
+          <div>
+            <h1>Egg Sandwitch</h1>
+            <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+            <h2>$13.49</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MOBILE APP -->
     <div id="download-app">
       <div>
         <div class="description">
@@ -213,6 +281,112 @@
       </div>
     </div>
 
+    <!-- ABOUT -->
+    <div id="about">
+      <div>
+        <div><img src="assets/about-01-img.png" alt="Photos" /></div>
+        <div>
+          <h1>Nothing brings people together like a good burger</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida elit quis placerat tristique. Morbi nec nisl interdum, sodales dolor eu, tristique purus. Vivamus vitae turpis auctor, pretium eros ultricies, rutrum nunc.
+          </p>
+          <p>
+            <ul>
+              <li>Aenean felis tortor, molestie eget rhoncus eget, euismod eget urna.</li>
+              <li>Curabitur vel ornare elit. Fusce congue felis vel tellus varius, non</li>
+              <li>congue nunc rhoncus. Vestibulum eu mi ipsum. Curabitur quis risus a</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- REVIEWS -->
+    <div id="testimonial">
+      <div>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div>
+                <img src="assets/review-author-1.jpeg" alt="">
+                <p>Nulla mattis imperdiet ex. Mauris ex mauris, semper eget tellus sed, ornare rhoncus purus. Mauris ut consequat neque. Suspendisse scelerisque erat quis ligula posuere tristique.</p>
+                <div>
+                  <span class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                  <span>Shean MCMarthy</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="assets/review-author-2.jpeg" alt="">
+                <p>Nulla mattis imperdiet ex. Mauris ex mauris, semper eget tellus sed, ornare rhoncus purus. Mauris ut consequat neque. Suspendisse scelerisque erat quis ligula posuere tristique.</p>
+                <div>
+                  <span class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                  <span>Shean MCMarthy</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <img src="assets/review-author-3.jpeg" alt="">
+                <p>Nulla mattis imperdiet ex. Mauris ex mauris, semper eget tellus sed, ornare rhoncus purus. Mauris ut consequat neque. Suspendisse scelerisque erat quis ligula posuere tristique.</p>
+                <div>
+                  <span class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span>Shean MCMarthy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE GALLERY-->
+    <div id="gallery">
+      <div class="text">
+        <h1>Image Gallery</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida elit quis placerat tristique.</p>
+      </div>
+      <img src="assets/img-01.jpeg" alt="Special double burger meat" />
+      <img src="assets/img-02.jpeg" alt="Special food menu" />
+      <img src="assets/img-03.jpeg" alt="Happy breakfast time" />
+      <img src="assets/img-04.jpeg" alt="Special vegan menu" />
+      <img src="assets/img-05.jpeg" alt="Special double burger meat" />
+      <img src="assets/img-06.jpeg" alt="Special food menu" />
+      <img src="assets/img-07.jpeg" alt="Happy breakfast time" />
+      <img src="assets/img-08.jpeg" alt="Special vegan menu" />
+    </div>
+
+    <!-- FOOTER -->
     <div id="footer">
       <div class="call-action">
         <div>
@@ -263,5 +437,79 @@
         </ul>
       </div>
     </div>
+
+    <!-- LAYOUT MENU -->
+    <div class="off-canvas">
+      <div class="off-canvas-header">
+        <h4 class="off-canvas-title">Off-Canvas-Menu</h4>
+        <div data-bs-dismiss="off-canvas" aria-label="Close">
+          <div class="icon-close"></div>
+        </div>
+      </div>
+
+      <div class="off-canvas-body">
+        <nav>
+          <ul class="list-level-0">
+            <li class="list-item">
+              <a class="link-level-1" href="#"> Home </a>
+            </li>
+
+            <li class="list-item">
+              <a class="link-level-1" href="#">
+                Services&nbsp;<span class="link-arrow">&#8250;</span>
+              </a>
+              <ul class="list-level-1">
+                <li class="list-item">
+                  <a class="link-level-2" href="#"> UX-Design </a>
+                </li>
+                <li class="list-item">
+                  <a class="link-level-2" href="#"> Webdesign </a>
+                </li>
+                <li class="list-item">
+                  <a class="link-level-2" href="#"> Content Marketing </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="list-item">
+              <a class="link-level-1" href="#">
+                Team&nbsp;<span class="link-arrow">&#8250;</span>
+              </a>
+              <ul class="list-level-1">
+                <li class="list-item">
+                  <a class="link-level-2" href="#"> John </a>
+                </li>
+
+                <li class="list-item">
+                  <a class="link-level-2" href="#"> Peter </a>
+                </li>
+
+                <li class="list-item">
+                  <a class="link-level-2" href="#"> Gordon </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+
+    <!-- SWIPER.JS -->
+    <script src="swiper-testimonial.js"></script>
+
+    <!-- CANVAS MENU -->
+    <script async src="off-canvas-menu.min.js"></script>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
   </body>
 </html>

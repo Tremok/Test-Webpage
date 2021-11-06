@@ -1,0 +1,29 @@
+@import url(review-carousel.css);
+#testimonial {
+  background: url(assets/reviews.jpeg);
+  background-size: cover;
+  text-align: center;
+  color: var(--color-white);
+  max-width: none;
+  box-sizing: border-box;
+  padding: 60px 0px;
+}
+
+#testimonial .swiper-slide p {
+  font-weight: 300;
+}
+
+#testimonial .swiper-slide span {
+  font-family: var(--font-oswald);
+  display: block;
+}
+
+#testimonial .swiper-slide span.stars {
+  color: var(--color-yellow);
+  margin-bottom: 10px;
+}
+
+#testimonial .swiper-slide img {
+  border-radius: 50%;
+  height: 100px;
+}

@@ -11,8 +11,9 @@
   text-transform: uppercase;
   max-width: none;
   box-sizing: border-box;
-  padding: 60px 0px;
-  background-position: 0px -20px;
+  padding: 70px 0px;
+  background-position: 0px;
+  background-origin: border-box;
 }
 
 #footer > div {
@@ -25,9 +26,11 @@
 #footer .call-action h2 {
   font-weight: normal;
   font-size: 1.5em;
+  margin: 0px;
 }
 #footer .call-action h1 {
   font-size: 3em;
+  margin: 0px;
 }
 #footer .call-action p {
   font-size: 0.8em;
@@ -110,7 +113,7 @@
   text-transform: capitalize;
 }
 
-li + li::before {
+#footer li + li::before {
   color: #ddd;
   content: '|';
 }

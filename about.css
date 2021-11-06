@@ -1,0 +1,37 @@
+#about div {
+  display: table;
+  margin: 150px auto;
+}
+
+#about div > div {
+  display: table-cell;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 50%;
+}
+
+#about img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+#about h1 {
+  font-family: var(--font-oswald);
+  font-size: 3em;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+#about p,
+#about ul {
+  font-size: 1em;
+  line-height: 1.5;
+}
+/*
+#about .item.product h2 {
+  font-family: var(--font-oswald);
+  color: var(--color-red);
+  margin-top: 10px;
+} */
